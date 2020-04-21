@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item id="projectExplorer">
+		<column name="Name" visible="true" order="0" width="395"/>
+		<column name="DataSource" visible="true" order="1" width="173"/>
+	</item>
+	<item id="scriptSelectorViewer">
+		<column name="Script" visible="true" order="0" width="101"/>
+		<column name="Time" visible="true" order="1" width="151"/>
+		<column name="Info" visible="true" order="2" width="1600"/>
+	</item>
+</items>

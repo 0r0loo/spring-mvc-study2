@@ -1,0 +1,5 @@
+
+4월 20, 2020 16:35:58.71 NEW SESSION
+4월 20, 2020 16:35:58.71 [5480:2632:0420/163558.678:ERROR:socket_stream.cc(218)] Closing stream with result -2
+4월 20, 2020 18:37:09.88 [5480:3848:0420/183709.888:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+4월 20, 2020 18:37:09.92 [5480:2632:0420/183709.922:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106

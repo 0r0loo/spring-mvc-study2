@@ -1,0 +1,6 @@
+package com.cho.mapper;
+
+public interface TimeMapper {
+
+	
+}

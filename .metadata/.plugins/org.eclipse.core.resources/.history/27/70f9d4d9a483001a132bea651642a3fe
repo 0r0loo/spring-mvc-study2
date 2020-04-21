@@ -1,0 +1,5 @@
+package com.cho.service;
+
+public class BoardServiceImpl implements BoardService {
+
+}

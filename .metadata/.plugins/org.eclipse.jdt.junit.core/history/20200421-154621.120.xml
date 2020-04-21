@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BoardMapperTests" project="ex02" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.cho.mapper.BoardMapperTests" time="0.224">
+    <testcase name="testGetList" classname="com.cho.mapper.BoardMapperTests" time="0.21"/>
+    <testcase name="testInsertSelectKey" classname="com.cho.mapper.BoardMapperTests" time="0.01"/>
+    <testcase name="testInsert" classname="com.cho.mapper.BoardMapperTests" time="0.004"/>
+  </testsuite>
+</testrun>
