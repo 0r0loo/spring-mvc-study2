@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cho.domain.BoardVO;
+import com.cho.domain.Criteria;
 import com.cho.mapper.BoardMapper;
 
 import lombok.AllArgsConstructor;
@@ -23,32 +24,53 @@ public class BoardServiceImpl implements BoardService {
 	
 	@Override
 	public void register(BoardVO board) {
-		// TODO Auto-generated method stub
+		log.info("register...." + board);
 		
+		mapper.insertSelectKey(board);
 	}
 
+	
+	// 게시물 조회
 	@Override
 	public BoardVO get(Long bno) {
-		// TODO Auto-generated method stub
-		return null;
+		log.info("get...."+bno);
+		return mapper.read(bno);
 	}
 
+	// 게시물 수정
 	@Override
 	public boolean modify(BoardVO board) {
-		// TODO Auto-generated method stub
-		return false;
+		log.info("modify...." + board);
+		
+		return mapper.update(board) == 1;
 	}
 
 	@Override
 	public boolean remove(Long bno) {
-		// TODO Auto-generated method stub
-		return false;
+		log.info("remove...." + bno);
+		return mapper.delete(bno) == 1;
 	}
+
+	// 게시판 목록 가져오기
+//	@Override
+//	public List<BoardVO> getList() {
+//		log.info("getList....");
+//		return mapper.getList();
+//	}
+	// 게시판 목록 가져오기 페이징 처리
+	@Override
+	public List<BoardVO> getList(Criteria cri) {
+		log.info("getList.... with criteria : "+ cri);
+		return mapper.getListWithPaging(cri);
+	}
+
 
 	@Override
-	public List<BoardVO> getList() {
-		// TODO Auto-generated method stub
-		return null;
+	public int getTotal(Criteria cri) {
+		
+		log.info("get total count");
+		return mapper.getTotalCount(cri);
 	}
-
+	
+	
 }

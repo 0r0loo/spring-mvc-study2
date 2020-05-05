@@ -1,5 +1,0 @@
-package com.cho.service;
-
-public interface BoardService {
-
-}

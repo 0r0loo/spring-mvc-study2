@@ -5,11 +5,15 @@ import java.util.List;
 import org.apache.ibatis.annotations.Select;
 
 import com.cho.domain.BoardVO;
+import com.cho.domain.Criteria;
 
 public interface BoardMapper {
 
 	// @Select("select * from tbl_board where bno > 0")
 	public List<BoardVO> getList();
+	
+	// 페이징 처리를 위한
+	public List<BoardVO> getListWithPaging(Criteria cri);
 	
 	public void insert(BoardVO board);
 	
@@ -21,6 +25,8 @@ public interface BoardMapper {
 	
 	public int update(BoardVO board);
 	
+	// 전체 게시글수 구하기
+	public int getTotalCount(Criteria cri);
 	
 	
 }

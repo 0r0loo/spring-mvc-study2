@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="JDBCTests (3)" project="jex02" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.cho.persistence.JDBCTests" time="0.464">
-    <testcase name="testConnection" classname="com.cho.persistence.JDBCTests" time="0.464"/>
-  </testsuite>
-</testrun>

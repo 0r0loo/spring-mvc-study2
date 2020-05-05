@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <items>
+	<item id="ExecutionPlan/oracle_thin">
+		<column name="Operation" visible="true" order="0" width="259"/>
+		<column name="Object" visible="true" order="1" width="100"/>
+		<column name="Optimizer" visible="true" order="2" width="100"/>
+		<column name="Cost" visible="true" order="3" width="100"/>
+		<column name="Cardinality" visible="true" order="4" width="100"/>
+		<column name="Bytes" visible="true" order="5" width="100"/>
+	</item>
 	<item id="projectExplorer">
 		<column name="Name" visible="true" order="0" width="395"/>
 		<column name="DataSource" visible="true" order="1" width="173"/>

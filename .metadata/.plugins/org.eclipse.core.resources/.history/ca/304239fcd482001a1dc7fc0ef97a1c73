@@ -1,5 +1,0 @@
-package com.cho.exception;
-
-public class CommonExceptionAdvice {
-
-}

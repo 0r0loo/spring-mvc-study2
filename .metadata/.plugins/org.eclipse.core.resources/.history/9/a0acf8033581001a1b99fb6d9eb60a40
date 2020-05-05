@@ -1,7 +1,0 @@
-package com.cho.sample;
-
-import org.junit.runner.RunWith;
-
-public class SampleTests {
-
-}
